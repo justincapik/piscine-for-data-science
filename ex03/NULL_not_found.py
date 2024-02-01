@@ -1,20 +1,20 @@
-def NULL_not_found(object: any) -> int:
-    t = str(type(object))
+def NULL_not_found(obj: any) -> int:
+    t = str(type(obj))
 
-    if object == None:
-        print ("Nothing : " + str(object) + " "  + t)
+    if obj == None:
+        print ("Nothing : " + str(obj) + " "  + t)
         return 0
-    elif isinstance(object, float) and object != object:
-        print ("Cheese : " + str(object) + " "  + t)
+    elif isinstance(obj, float) and obj != obj:
+        print ("Cheese : " + str(obj) + " "  + t)
         return 0
-    elif isinstance(object, int) and object == 0:
-        print ("Zero : " + str(object) + " "  + t)
+    elif isinstance(obj, int) and obj == 0:
+        print ("Zero : " + str(obj) + " "  + t)
         return 0
-    elif isinstance(object, str) and object == "":
-        print ("Empty : " + str(object) + t)
+    elif isinstance(obj, str) and obj == "":
+        print ("Empty : " + str(obj) + t)
         return 0
-    elif isinstance(object, bool) and object == False:
-        print ("Fake : " + str(object) + " " + t)
+    elif isinstance(obj, bool) and obj == False:
+        print ("Fake : " + str(obj) + " " + t)
         return 0
     else:
         print ("Type not found")
